@@ -1,0 +1,1119 @@
+/*
+---------------------------------------------------------------------------------------
+   allocations - blue1 / blue - 002B82 / 0058DA
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.allocations .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/allocations-26.png);
+  background-color: #002B82;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.allocations.active .x-panel-body .logo, .inspector .tab.allocations .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/allocations-26.png);
+  background-color: #002B82;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.allocations.active .x-panel-body, .inspector .tab.allocations.active .x-panel-body:hover, .inspector .tab.allocations .x-panel-body:hover {
+  background: #0058DA;
+}
+
+/* Tile */
+.tile.allocations {
+  background-image: url(/assets/infodesk/desktop/icons/module/allocations-60.png);
+  background-color: #002B82 !important;
+}
+
+.tile.allocations:hover {
+  background-color: #0058DA !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   costs - blue2 / blue - 105F86 / 0058DA
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.costs .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/costs-26.png);
+  background-color: #105F86;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.costs.active .x-panel-body .logo, .inspector .tab.costs .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/costs-26.png);
+  background-color: #105F86;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.costs.active .x-panel-body, .inspector .tab.costs.active .x-panel-body:hover, .inspector .tab.costs .x-panel-body:hover {
+  background: #0058DA;
+}
+
+/* Tile */
+.tile.costs {
+  background-image: url(/assets/infodesk/desktop/icons/module/costs-60.png);
+  background-color: #105F86 !important;
+}
+
+.tile.costs:hover {
+  background-color: #0058DA !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   company - pink - C3004D
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.company .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/survey.png);
+  background-color: #C076DE;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.company.active .x-panel-body .logo, .inspector .tab.company .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/company.png);
+  background-color: #C488DB;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.company.active .x-panel-body, .inspector .tab.company.active .x-panel-body:hover, .inspector .tab.company .x-panel-body:hover {
+  background: #C076DE;
+}
+
+/* Tile */
+.tile.company {
+  background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+  background-color: #C076DE !important;
+}
+
+.tile.company:hover {
+  background-color: #C488DB !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   purchases - blue3 / blue - 756BF9 / 0058DA
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.purchases .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/purchases-26.png);
+  background-color: #756BF9;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.purchases.active .x-panel-body .logo, .inspector .tab.purchases .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/purchases-26.png);
+  background-color: #756BF9;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.purchases.active .x-panel-body, .inspector .tab.purchases.active .x-panel-body:hover, .inspector .tab.purchases .x-panel-body:hover {
+  background: #0058DA;
+}
+
+/* Tile */
+.tile.purchases {
+  background-image: url(/assets/infodesk/desktop/icons/module/purchases-60.png);
+  background-color: #756BF9 !important;
+}
+
+.tile.purchases:hover {
+  background-color: #0058DA !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   supply - pink - 000058
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.supply .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/supply-26.png);
+  background-color: #000058;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.supply.active .x-panel-body .logo, .inspector .tab.supply .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/supply-26.png);
+  background-color: #AF0044;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.supply.active .x-panel-body, .inspector .tab.supply.active .x-panel-body:hover, .inspector .tab.supply .x-panel-body:hover {
+  background: #000058;
+}
+
+/* Tile */
+.tile.supply {
+  background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+  background-color: #000058 !important;
+}
+
+.tile.supply:hover {
+  background-color: #AF0044 !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   period_results - pink - C3004D
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.period_results .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/period_results-26.png);
+  background-color: #A200FF;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.period_results.active .x-panel-body .logo, .inspector .tab.period_results .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/period_results-26.png);
+  background-color: #AF0044;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.period_results.active .x-panel-body, .inspector .tab.period_results.active .x-panel-body:hover, .inspector .tab.period_results .x-panel-body:hover {
+  background: #A200FF;
+}
+
+/* Tile */
+.tile.period_results {
+  background-image: url(/assets/infodesk/desktop/icons/module/period_results-60.png);
+  background-color: #A200FF !important;
+}
+
+.tile.period_results:hover {
+  background-color: #AF0044 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   skus - pink - 009999
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.skus .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/skus-26.png);
+  background-color: #009999;
+
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.skus.active .x-panel-body .logo, .inspector .tab.skus .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/skus-26.png);
+  background-color: #AF0044;
+}
+
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.skus.active .x-panel-body, .inspector .tab.skus.active .x-panel-body:hover, .inspector .tab.skus .x-panel-body:hover {
+  background: #009999;
+}
+
+/* Tile */
+.tile.skus {
+  background-color: #0075C9 !important;
+}
+
+.tile.skus:hover {
+  background-color: #005491 !important;
+}
+
+.tile.skus:before {
+  content: "\f155";
+}
+/**/
+
+
+/*
+---------------------------------------------------------------------------------------
+   styles - pink - 015965 / 770060
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.styles .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/styles-26.png);
+  background-color: #015965;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.styles.active .x-panel-body .logo, .inspector .tab.styles .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/styles-26.png);
+  background-color: #AF0044;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.styles.active .x-panel-body, .inspector .tab.styles.active .x-panel-body:hover, .inspector .tab.styles .x-panel-body:hover {
+  background: #015965;
+}
+
+/* Tile */
+.tile.styles {
+  background-image: url(/assets/infodesk/desktop/icons/module/styles-60.png);
+  background-color: #015965 !important;
+}
+
+.tile.styles:hover {
+  background-color: #AF0044 !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   classifications - pink - E671B8
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.classifications .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/classifications.png);
+  background-color: #E671B8;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.classifications.active .x-panel-body .logo, .inspector .tab.classifications .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/classifications.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.classifications.active .x-panel-body, .inspector .tab.classifications.active .x-panel-body:hover, .inspector .tab.classifications .x-panel-body:hover {
+  background: #E671B8;
+}
+
+/* Tile */
+.tile.classifications {
+	background-image: url(/assets/infodesk/desktop/icons/module/classifications.png);
+	background-color: #E671B8 !important;
+}
+
+.tile.classifications:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   subclasses - maroon1 - 990000
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.subclasses .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/colorgroups52x52.png);
+  background-color: #990000;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.subclasses.active .x-panel-body .logo, .inspector .tab.subclasses .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/subclasses.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.subclasses.active .x-panel-body, .inspector .tab.subclasses.active .x-panel-body:hover, .inspector .tab.subclasses .x-panel-body:hover {
+  background: #990000;
+}
+
+/* Tile */
+.tile.subclasses {
+	background-image: url(/assets/infodesk/desktop/icons/module/subclasses.png);
+	background-color: #990000 !important;
+}
+
+.tile.subclasses:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   colors - light blue - 1F92C2
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.colors .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/colors.png);
+  background-color: #1F92C2;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.colors.active .x-panel-body .logo, .inspector .tab.colors .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/colors.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.colors.active .x-panel-body, .inspector .tab.colors.active .x-panel-body:hover, .inspector .tab.colors .x-panel-body:hover {
+  background: #1F92C2;
+}
+
+/* Tile */
+.tile.colors {
+	background-image: url(/assets/infodesk/desktop/icons/module/colors.png);
+	background-color: #1F92C2 !important;
+}
+
+.tile.colors:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   departments - dark blue - 276DA5
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.departments .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/departments.png);
+  background-color: #276DA5;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.departments.active .x-panel-body .logo, .inspector .tab.departments .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/departments1.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.departments.active .x-panel-body, .inspector .tab.departments.active .x-panel-body:hover, .inspector .tab.departments .x-panel-body:hover {
+  background: #276DA5;
+}
+
+/* Tile */
+.tile.departments {
+	background-image: url(/assets/infodesk/desktop/icons/module/departments1.png);
+	background-color: #276DA5 !important;
+}
+
+.tile.departments:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   product_setup - F09609
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.product_setup .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/product_setup.png);
+  background-color: #00A5A6;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.product_setup.active .x-panel-body .logo, .inspector .tab.product_setup .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/product_setup.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.product_setup.active .x-panel-body, .inspector .tab.product_setup.active .x-panel-body:hover, .inspector .tab.product_setup .x-panel-body:hover {
+  background: #00A5A6;
+}
+
+/* Tile */
+.tile.product_setup {
+	background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+	background-color: #00A5A6 !important;
+}
+
+.tile.product_setup:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   product_types - brown - A05000
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.product_types .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/product_types.png);
+  background-color: #A05000;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.product_types.active .x-panel-body .logo, .inspector .tab.product_types .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/product_types.png);
+  background-color: #A05000;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.product_types.active .x-panel-body, .inspector .tab.product_types.active .x-panel-body:hover, .inspector .tab.product_types .x-panel-body:hover {
+  background: #A05000;
+}
+
+/* Tile */
+.tile.product_types {
+	background-image: url(/assets/infodesk/desktop/icons/module/product_types.png);
+	background-color: #A05000 !important;
+}
+
+.tile.product_types:hover {
+	background-color: #A05000 !important;
+}
+/*
+---------------------------------------------------------------------------------------
+   subclasses - purple 2 - BD47FF
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.subclasses .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/subclasses.png);
+  background-color: #BD47FF;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.subclasses.active .x-panel-body .logo, .inspector .tab.subclasses .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/subclasses.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.subclasses.active .x-panel-body, .inspector .tab.subclasses.active .x-panel-body:hover, .inspector .tab.subclasses .x-panel-body:hover {
+  background: #BD47FF;
+}
+
+/* Tile */
+.tile.subclasses {
+	background-image: url(/assets/infodesk/desktop/icons/module/subclasses.png);
+	background-color: #8900AF !important;
+}
+
+.tile.subclasses:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   sizes - purple - 6900A4
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.sizes .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/sizes.png);
+  background-color: #6900A4;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.sizes.active .x-panel-body .logo, .inspector .tab.sizes .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/sizes.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.sizes.active .x-panel-body, .inspector .tab.sizes.active .x-panel-body:hover, .inspector .tab.sizes .x-panel-body:hover {
+  background: #6900A4;
+}
+
+/* Tile */
+.tile.sizes {
+	background-image: url(/assets/infodesk/desktop/icons/module/sizes.png);
+	background-color: #6900A4 !important;
+}
+
+.tile.sizes:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   size_groups - F0A6D2
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.size_groups .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/size_groups.png);
+  background-color: #F0A6D2;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.size_groups.active .x-panel-body .logo, .inspector .tab.size_groups .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/size_groups.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.size_groups.active .x-panel-body, .inspector .tab.size_groups.active .x-panel-body:hover, .inspector .tab.size_groups .x-panel-body:hover {
+  background: #F0A6D2;
+}
+
+/* Tile */
+.tile.size_groups {
+	background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+	background-color: #F0A6D2 !important;
+}
+
+.tile.size_groups:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   size_group_details - teal1 - 007976
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.size_group_details .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/size_group_details.png);
+  background-color: #007976;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.size_group_details.active .x-panel-body .logo, .inspector .tab.size_group_details .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/size_group_details.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.size_group_details.active .x-panel-body, .inspector .tab.size_group_details.active .x-panel-body:hover, .inspector .tab.size_group_details .x-panel-body:hover {
+  background: #007976;
+}
+
+/* Tile */
+.tile.size_group_details {
+	background-image: url(/assets/infodesk/desktop/icons/module/size_group_details.png);
+	background-color: #007976 !important;
+}
+
+.tile.size_group_details:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   classifications - green - 103210
+---------------------------------------------------------------------------------------
+*/
+
+/* Inspector Logo */
+.inspector .tab.classifications .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/classifications.png);
+  background-color: #103210;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.classifications.active .x-panel-body .logo, .inspector .tab.classifications .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/classifications.png);
+  background-color: #600079;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.classifications.active .x-panel-body, .inspector .tab.classifications.active .x-panel-body:hover, .inspector .tab.classifications .x-panel-body:hover {
+  background: #103210;
+}
+
+/* Tile */
+.tile.classifications {
+	background-image: url(/assets/infodesk/desktop/icons/module/classifications.png);
+	background-color: #103210 !important;
+}
+
+.tile.classifications:hover {
+	background-color: #600079 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   BTS
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.bts .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/bts.png);
+  background-color: #C3004D;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.bts.active .x-panel-body .logo, .inspector .tab.bts .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/contracts.png);
+  background-color: #AF0044;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.bts.active .x-panel-body, .inspector .tab.bts.active .x-panel-body:hover, .inspector .tab.bts .x-panel-body:hover {
+  background: #C3004D;
+}
+
+/* Tile */
+.tile.bts {
+	background-image: url(/assets/infodesk/desktop/icons/module/bill.png);
+	background-color: #C3004D !important;
+}
+
+.tile.bts:hover {
+	background-color: #AF0044 !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   inventories
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.inventories .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/inventories.png);
+  background-color: #0075C9;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.inventories.active .x-panel-body .logo, .inspector .tab.inventories .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/inventories.png);
+  background-color: #005491;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.inventories.active .x-panel-body, .inspector .tab.inventories.active .x-panel-body:hover, .inspector .tab.inventories .x-panel-body:hover {
+  background: #0075C9;
+}
+
+/* Tile */
+.tile.inventories {
+  background-image: url(/assets/infodesk/desktop/icons/module/inventories.png);
+  background-color: #D6E629 !important;
+}
+
+.tile.inventories:hover {
+  background-color: #005491 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   legacy - F0A6D2
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.legacy .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/legacy.png);
+  background-color: #F0A6D2;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.legacy.active .x-panel-body .logo, .inspector .tab.legacy .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/legacy.png);
+  background-color: #005491;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.legacy.active .x-panel-body, .inspector .tab.legacy.active .x-panel-body:hover, .inspector .tab.legacy .x-panel-body:hover {
+  background: #F0A6D2;
+}
+
+/* Tile */
+.tile.legacy {
+  background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+  background-color: #F0A6D2 !important;
+}
+
+.tile.legacy:hover {
+  background-color: #005491 !important;
+}
+
+
+
+
+/*
+---------------------------------------------------------------------------------------
+   project_tracking
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.project_tracking .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+  background-color: #71C8EB;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.project_tracking.active .x-panel-body .logo, .inspector .tab.project_tracking .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+  background-color: #2A7896;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.project_tracking.active .x-panel-body, .inspector .tab.tile_default.active .x-panel-body:hover, .inspector .tab.project_tracking .x-panel-body:hover {
+  background: #71C8EB;
+}
+
+/* Tile */
+.tile.project_tracking {
+	background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+	background-color: #71C8EB !important;
+}
+
+.tile.project_tracking:hover {
+	background-color: #2A7896 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   network
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.network .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/network.png);
+  background-color: #B60D44;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.network.active .x-panel-body .logo, .inspector .tab.network .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+  background-color: #84052E;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.network.active .x-panel-body, .inspector .tab.network.active .x-panel-body:hover, .inspector .tab.network .x-panel-body:hover {
+  background: #B60D44;
+}
+
+/* Tile */
+.tile.network {
+	background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+	background-color: #B60D44 !important;
+}
+
+.tile.network:hover {
+	background-color: #84052E !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   COLORS - yellow  F6BD00 / CA9B00
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.colors .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/colors-26.png);
+  background-color: #F6BD00;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.colors.active .x-panel-body .logo, .inspector .tab.colors .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/colors-26.png);
+  background-color: #856500;
+}
+
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.colors.active .x-panel-body, .inspector .tab.colors.active .x-panel-body:hover, .inspector .tab.colors .x-panel-body:hover {
+  background: #F6BD00;
+}
+
+/* Tile */
+.tile.colors {
+	background-image: url(/assets/infodesk/desktop/icons/module/colors-60.png);
+	background-color: #F6BD00 !important;
+}
+
+.tile.colors:hover {
+	background-color: #CA9B00 !important;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   sites
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.sites .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/sites.png);
+  background-color: #B60D44;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.sites.active .x-panel-body .logo, .inspector .tab.sites .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/sites.png);
+  background-color: #007373;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.sites.active .x-panel-body, .inspector .tab.sites.active .x-panel-body:hover, .inspector .tab.sites .x-panel-body:hover {
+  background: #B60D44;
+}
+
+/* Tile */
+.tile.sites {
+	background-image: url(/assets/infodesk/desktop/icons/module/sites.png);
+	background-color: #B60D44 !important;
+}
+
+.tile.sites:hover {
+	background-color: #007373 !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   product_hierarchy
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.product_hierarchy .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/product_hierarchy.png);
+  background-color: #0075C9;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.product_hierarchy.active .x-panel-body .logo, .inspector .tab.product_hierarchy .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/product_hierarchy.png);
+  background-color: #3C3C3C;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.product_hierarchy.active .x-panel-body, .inspector .tab.product_hierarchy.active .x-panel-body:hover, .inspector .tab.product_hierarchy .x-panel-body:hover {
+  background: #0075C9;
+}
+
+/* Tile */
+.tile.product_hierarchy {
+  background-image: url(/assets/infodesk/desktop/icons/module/tile_default.png);
+  background-color: #0075C9 !important;
+}
+
+.tile.product_hierarchy:hover {
+  background-color: #3C3C3C !important;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   ADDRESSES
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.addresses .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/addresses.png);
+  background-color: #757575;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.addresses.active .x-panel-body .logo, .inspector .tab.addresses .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/addresses.png);
+  background-color: #3C3C3C;
+}
+
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.addresses.active .x-panel-body, .inspector .tab.addresses.active .x-panel-body:hover, .inspector .tab.addresses .x-panel-body:hover {
+  background: #757575;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   EMAIL ADDRESSES
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.email_addresses .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/email_addresses.png);
+  background-color: #757575;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.email_addresses.active .x-panel-body .logo, .inspector .tab.email_addresses .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/email_addresses.png);
+  background-color: #3C3C3C;
+}
+
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.email_addresses.active .x-panel-body, .inspector .tab.email_addresses.active .x-panel-body:hover, .inspector .tab.email_addresses .x-panel-body:hover {
+  background: #757575;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   APPROVALS
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.approvals .x-panel-body .logo, .inspector .tab.approvals .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/approvals.png);
+  background-color: #69A900;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.approvals.active .x-panel-body, .inspector .tab.approvals.active .x-panel-body:hover, .inspector .tab.approvals .x-panel-body:hover {
+  background: #76BC00;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   SURVEY
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.survey .x-panel-body .logo, .inspector .tab.survey .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/survey.png);
+  background-color: #4E0077;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.survey.active .x-panel-body, .inspector .tab.survey.active .x-panel-body:hover, .inspector .tab.survey .x-panel-body:hover {
+  background: #7400AF;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   TRACKS
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.tracks .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/tracks.png);
+  background-color: #FF2082;
+}
+
+/* Inspector Logo Active & Hover*/
+.inspector .tab.tracks.active .x-panel-body .logo, .inspector .tab.tracks .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/tracks.png);
+  background-color: #8A0942;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.tracks.active .x-panel-body, .inspector .tab.tracks.active .x-panel-body:hover, .inspector .tab.tracks .x-panel-body:hover {
+  background: #FF2082;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   FINANCIAL SCORECARD
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.financial_scorecards .x-panel-body .logo, .inspector .tab.financial_scorecards .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/financial_scorecards.png);
+  background-color: #5F5F5F;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.financial_scorecards.active .x-panel-body, .inspector .tab.financial_scorecards.active .x-panel-body:hover, .inspector .tab.financial_scorecards .x-panel-body:hover {
+  background: #6A6A6A;
+}
+
+
+/*
+---------------------------------------------------------------------------------------
+   MONTHLY REPORTS
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.monthly_reports .x-panel-body .logo, .inspector .tab.monthly_reports .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/monthly_reports.png);
+  background-color: #5F5F5F;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.monthly_reports.active .x-panel-body, .inspector .tab.monthly_reports.active .x-panel-body:hover, .inspector .tab.monthly_reports .x-panel-body:hover {
+  background: #6A6A6A;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   CUSTOMER NEEDS
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.customer_needs .x-panel-body .logo, .inspector .tab.customer_needs .x-panel-body:hover .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/customer_needs.png);
+  background-color: #5F5F5F;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.customer_needs.active .x-panel-body, .inspector .tab.customer_needs.active .x-panel-body:hover, .inspector .tab.customer_needs .x-panel-body:hover {
+  background: #6A6A6A;
+}
+
+/*
+---------------------------------------------------------------------------------------
+   locations
+---------------------------------------------------------------------------------------
+*/
+
+
+/* Inspector Logo */
+.inspector .tab.locations .x-panel-body .logo {
+  background-image: url(/assets/infodesk/desktop/icons/module/locations.png);
+  background-color: #0075C9;
+}
+
+/* Inspector Logo Active & Hover */
+.inspector .tab.locations.active .x-panel-body .logo, .inspector .tab.locations .x-panel-body:hover .logo {
+  background-color: #005491;
+}
+
+/* Inspector Tab Active & Hover */
+.inspector .tab.locations.active .x-panel-body, .inspector .tab.locations.active .x-panel-body:hover, .inspector .tab.locations .x-panel-body:hover {
+  background: #0075C9;
+}
+
+/* Tile */
+.tile.locations {
+  background-image: url(/assets/infodesk/desktop/icons/module/locations.png);
+  background-color: #0075C9 !important;
+}
+
+.tile.locations:hover {
+  background-color: #005491 !important;
+}

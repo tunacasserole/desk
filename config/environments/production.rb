@@ -1,4 +1,4 @@
-Infodeskgen::Application.configure do
+Infodesk::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
@@ -27,7 +27,9 @@ Infodeskgen::Application.configure do
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
-  config.assets.compile = false
+  config.assets.compile = true # to fix heroku issues
+  # Heroku also requires this to be false
+  config.assets.initialize_on_precompile = false
 
   # Generate digests for assets URLs.
   config.assets.digest = true
@@ -43,7 +45,7 @@ Infodeskgen::Application.configure do
   # config.force_ssl = true
 
   # Set to :debug to see everything in the log.
-  config.log_level = :info
+  config.log_level = :debug
 
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
@@ -76,5 +78,12 @@ Infodeskgen::Application.configure do
   # config.autoflush_log = false
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.new
+  # config.log_formatter = ::Logger::Formatter.new
+  # config.log_formatter = ::Logger::PatternFormatter.new
+  # outputter = Log4r::FileOutputter.new('log4r', :filename => "foobar.log")
+  # outputter.formatter = Log4r::PatternFormatter.new(:date_pattern => "%FT%T.000Z", :pattern => "%d [%l] %m")
+
+  # logger = Log4r::Logger.new('log4r')
+  # logger.outputters = [outputter]
+  # config.log_formatter = Log4r::PatternFormatter.new(:date_pattern => "%FT%T.000Z", :pattern => "%d [%l] %m")
 end

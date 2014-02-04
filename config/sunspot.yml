@@ -1,0 +1,25 @@
+
+development:
+  solr:
+    hostname: localhost
+    port: 8983
+    log_level: INFO
+    min_memory: 512M
+    max_memory: 1G
+    path: '/solr/infodesk'
+
+production:
+  solr:
+    hostname: localhost
+    port: 8983
+    log_level: INFO
+    min_memory: 512M
+    max_memory: 1G
+    path: '/solr/infodesk'
+
+test:
+  solr:
+    hostname: localhost
+    port: 8981
+    log_level: WARNING
+

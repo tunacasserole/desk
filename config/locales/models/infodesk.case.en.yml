@@ -1,0 +1,14 @@
+en:
+  activerecord:
+    models:
+      infodesk/case:  'Case'
+    attributes:
+      infodesk/case:
+        case_id:                           'Case'
+        user_id:                           'User'
+        agent_id:                          'Agent'
+        state:                             'State'
+        summary:                           'Summary'
+        tags:                              'Tags'
+        description:                       'Description'
+        is_destroyed:                      'Is Destroyed'
