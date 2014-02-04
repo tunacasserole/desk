@@ -1,0 +1,15 @@
+en:
+  activerecord:
+    models:
+      desk/case:  'Case'
+    attributes:
+      desk/case:
+        display_as:                        'Case'
+        case_id:                           'Case'
+        user_id:                           'User'
+        agent_id:                          'Agent'
+        state:                             'State'
+        summary:                           'Summary'
+        tags:                              'Tags'
+        description:                       'Description'
+        is_destroyed:                      'Is Destroyed'

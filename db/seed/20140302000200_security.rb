@@ -16,22 +16,22 @@ Buildit::ApplicationRole.delete_all
 #   is_enabled:           true
 # )
 
-# INFODESK ERP DESKTOP
+# DESK ERP DESKTOP
 Buildit::Application.create(
-  application_id:       '6900AE7AC18B19BA20C9DINFODESKERP',
-  application_code:     'INFODESK',
-  hub_xtype:            'infodesk-app-Hub',
-  application_name:     'Infodesk',
+  application_id:       '6900AE7AC18B19BA20C9DDESKERP',
+  application_code:     'DESK',
+  hub_xtype:            'desk-app-Hub',
+  application_name:     'Desk',
   description:          "The complete help desk solution.",
   is_enabled:           1
   )
 
-# # INFODESK ERP ADMIN HUB
+# # DESK ERP ADMIN HUB
 # Buildit::Application.create(
-#   application_id:       '6900AE7AC18B11E289BA20CINFODESKADMIN',
-#   application_code:     'INFODESK_ADMIN',
-#   hub_xtype:            'infodesk-app-AdminHub',
-#   application_name:     'Infodesk ERP Administration',
+#   application_id:       '6900AE7AC18B11E289BA20CDESKADMIN',
+#   application_code:     'DESK_ADMIN',
+#   hub_xtype:            'desk-app-AdminHub',
+#   application_name:     'Desk ERP Administration',
 #   description:          "The admin console for the ERP solution for Parker School Uniforms",
 #   is_enabled:           1
 #   )
@@ -184,7 +184,7 @@ x.save
 Buildit::Role.create(
   role_id:                 '323244F0204011EFCFE9040CCEDPOWER',
   role_code:               'POWER_USER',
-  description:             'access to most of the infodesk system',
+  description:             'access to most of the desk system',
   is_enabled:              true,
   auto_assign:             false
 )
@@ -219,8 +219,8 @@ Buildit::User.where("email_address in ('a','t')").each do |u|
 end
 
 # APPLICATION ROLES =====================================================================
-# INFODESK POWER USER GETS INFODESK ERP DESKTOP
-Buildit::ApplicationRole.where(role_id: '323244F0204011EFCFE9040CCEDPOWER', application_id: '6900AE7AC18B11E289BA20C9DINFODESKERP').each { |x| x.is_enabled = true; x.save }
+# DESK POWER USER GETS DESK ERP DESKTOP
+Buildit::ApplicationRole.where(role_id: '323244F0204011EFCFE9040CCEDPOWER', application_id: '6900AE7AC18B11E289BA20C9DDESKERP').each { |x| x.is_enabled = true; x.save }
 
 # SUPER ADMIN ROLE GETS ALL APPLICATIONS
 Buildit::ApplicationRole.where(role_id: '323244F0204011EFCFE904SUPERADMIN').each { |x| x.is_enabled = true; x.save }

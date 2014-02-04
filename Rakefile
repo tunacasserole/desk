@@ -4,9 +4,9 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Infodesk::Application.load_tasks
+Desk::Application.load_tasks
 
-namespace :infodesk do
+namespace :desk do
 
   desc "run automated test suite"
   task :test => :environment do |t, args|
@@ -22,7 +22,7 @@ namespace :infodesk do
     # puts "Hello and #{args.model}"   #
     # puts "model is #{args[:model]}"  # both notations work
     @start_time = Time.now
-    Infodesk::Sync::Base.index(args.model)
+    Desk::Sync::Base.index(args.model)
     puts "== finished in #{(Time.now - @start_time).round(0).to_s.cyan}s\n"
   end
 
@@ -33,52 +33,52 @@ namespace :infodesk do
     # puts "Hello and #{args.model}"   #
     # puts "model is #{args[:model]}"  # both notations work
     @start_time = Time.now
-    Infodesk::Sync::Base.go(args.model)
+    Desk::Sync::Base.go(args.model)
     puts "== finished in #{(Time.now - @start_time).round(0).to_s.cyan}s\n"
   end
 
   namespace :sync do
     namespace :mark do
-      desc "load Infodesk inventory from RMS inventory."
+      desc "load Desk inventory from RMS inventory."
       task :inventory => :environment do |t, args|
-        Infodesk::Sync::Mark.inventory
+        Desk::Sync::Mark.inventory
       end
-      desc "load Infodesk daily results net sale units from Mark order line qty_ordered."
+      desc "load Desk daily results net sale units from Mark order line qty_ordered."
       task :results => :environment do |t, args|
-        Infodesk::Sync::Mark.results
+        Desk::Sync::Mark.results
       end
     end
 
     namespace :rms do
-      desc "load Infodesk daily results net sale units from rms."
+      desc "load Desk daily results net sale units from rms."
       task :inventory => :environment do |t, args|
-        Infodesk::Sync::Rms.inventory
+        Desk::Sync::Rms.inventory
       end
-      desc "load Infodesk daily results net sale units from rms transaction_entry quantity."
+      desc "load Desk daily results net sale units from rms transaction_entry quantity."
       task :results => :environment do |t, args|
-        Infodesk::Sync::Rms.results
+        Desk::Sync::Rms.results
       end
     end
 
     namespace :grits do
-      desc "load Infodesk inventory on hand from the RMS System."
+      desc "load Desk inventory on hand from the RMS System."
       task :inventory => :environment do |t, args|
-        Infodesk::Sync::Grits.inventory
+        Desk::Sync::Grits.inventory
       end
-      desc "load Infodesk daily results from sales history from the RMS System."
+      desc "load Desk daily results from sales history from the RMS System."
       task :results => :environment do |t, args|
-        Infodesk::Sync::Grits.results
+        Desk::Sync::Grits.results
       end
     end
 
-    namespace :infodesk do
-      desc "load Infodesk daily results from sales history from the RMS System."
+    namespace :desk do
+      desc "load Desk daily results from sales history from the RMS System."
       task :results => :environment do |t, args|
-        Infodesk::Sync::Infodesk.results
+        Desk::Sync::Desk.results
       end
       desc "Run the back to school report"
       task :bts => :environment do |t, args|
-        Infodesk::Sync::Infodesk.bts
+        Desk::Sync::Desk.bts
       end
     end
   end
@@ -197,38 +197,38 @@ namespace :infodesk do
   task :document do
 
     [
-      'infodesk::Customer 01',
-      # 'infodesk::CustomerNeed 02',
-      # 'infodesk::CustomerProduct 03',
+      'desk::Customer 01',
+      # 'desk::CustomerNeed 02',
+      # 'desk::CustomerProduct 03',
 
-      # 'infodesk::Person 04',
-      # 'infodesk::Address 05',
-      # 'infodesk::Telephone 06',
-      # 'infodesk::EmailAddress 07',
+      # 'desk::Person 04',
+      # 'desk::Address 05',
+      # 'desk::Telephone 06',
+      # 'desk::EmailAddress 07',
 
-      # 'infodesk::Project 08',
-      # 'infodesk::TollgateTrack 09',
-      # 'infodesk::TollgateCheckpoint 10',
-      # 'infodesk::FinancialScorecard 11',
+      # 'desk::Project 08',
+      # 'desk::TollgateTrack 09',
+      # 'desk::TollgateCheckpoint 10',
+      # 'desk::FinancialScorecard 11',
 
-      # 'infodesk::Sample 12',
-      # 'infodesk::SampleApproval 13',
+      # 'desk::Sample 12',
+      # 'desk::SampleApproval 13',
 
 
-      # 'infodesk::SalesCall 14',
-      # 'infodesk::SalesCallPerson 15',
+      # 'desk::SalesCall 14',
+      # 'desk::SalesCallPerson 15',
 
-      # 'infodesk::Cfar 16',
-      # 'infodesk::CfarApproval 17',
-      # 'infodesk::CfarFollowup 18',
-      # 'infodesk::CfarNotification 19',
+      # 'desk::Cfar 16',
+      # 'desk::CfarApproval 17',
+      # 'desk::CfarFollowup 18',
+      # 'desk::CfarNotification 19',
 
-      # 'infodesk::Track 20',
-      # 'infodesk::Checkpoint 21',
-      # 'infodesk::QualityPlant 22',
-      # 'infodesk::Severity 23',
-      # 'infodesk::Probability 24',
-      # 'infodesk::Product 25'
+      # 'desk::Track 20',
+      # 'desk::Checkpoint 21',
+      # 'desk::QualityPlant 22',
+      # 'desk::Severity 23',
+      # 'desk::Probability 24',
+      # 'desk::Product 25'
 
     ].each do |doc|
       system("rails g buildit:model_spec #{doc}")
@@ -249,7 +249,7 @@ namespace :infodesk do
   desc 'Performs all release steps to generate WAR'
   task :release do
     Rake::Task['assets:precompile'].invoke
-    Rake::Task['infodesk:war'].invoke
+    Rake::Task['desk:war'].invoke
   end
 
 
@@ -260,8 +260,8 @@ namespace :infodesk do
   namespace :deploy  do
     # List of environments and their heroku git remotes
     REMOTES = {
-      :staging    => 'infodesk-prod',
-      :prod       => 'infodesk-jruby'
+      :staging    => 'desk-prod',
+      :prod       => 'desk-jruby'
     }
 
     REMOTES.keys.each do |env|
@@ -269,9 +269,9 @@ namespace :infodesk do
       task env do
         current_branch = `git branch | grep ^* | awk '{ print $2 }'`.strip
 
-        Rake::Task['infodesk:deploy:before_deploy'].invoke(env, current_branch)
-        Rake::Task['infodesk:deploy:update_code'].invoke(env, current_branch)
-        Rake::Task['infodesk:deploy:after_deploy'].invoke(env, current_branch)
+        Rake::Task['desk:deploy:before_deploy'].invoke(env, current_branch)
+        Rake::Task['desk:deploy:update_code'].invoke(env, current_branch)
+        Rake::Task['desk:deploy:after_deploy'].invoke(env, current_branch)
       end
     end
 

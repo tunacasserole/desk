@@ -20,7 +20,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
-module Infodesk
+module Desk
   class Application < Rails::Application
 
      # assign log4r's logger as rails' logger.

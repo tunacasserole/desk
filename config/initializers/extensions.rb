@@ -1,1 +1,1 @@
-# Buildit::Attachment.send(:include, Infodesk::Attachment)
+# Buildit::Attachment.send(:include, Desk::Attachment)

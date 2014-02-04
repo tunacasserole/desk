@@ -1,10 +1,10 @@
-class Infodesk::Case::Service
+class Desk::Case::Service
   include Buildit::Service::Base
 
-  service 'Case', 'Infodesk.service'
+  service 'Case', 'Desk.service'
 
   connected_mode(Buildit::Service::Backend::Crud) do |config|
-    config.model = Infodesk::Case
+    config.model = Desk::Case
   end
 
-end # class Infodesk::Case::Service
+end # class Desk::Case::Service

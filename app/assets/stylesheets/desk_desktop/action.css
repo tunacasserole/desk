@@ -1,0 +1,31 @@
+.banner .x-btn.approve .x-btn-inner {
+  background-color: #144BA3;
+  background-image: url(/assets/desk/desktop/icons/actions/approve.png);
+}
+
+.banner .x-btn.reject .x-btn-inner {
+  background-color: #144BA3;
+  background-image: url(/assets/desk/desktop/icons/actions/reject.png);
+}
+
+.banner .x-btn.submit .x-btn-inner {
+  background-color: #144BA3;
+  background-image: url(/assets/desk/desktop/icons/actions/submit.png);
+}
+
+.banner .x-btn.ship .x-btn-inner {
+  background-color: #144BA3;
+  background-image: url(/assets/desk/desktop/icons/actions/ship.png);
+}
+
+.banner .x-btn.duplicate .x-btn-inner {
+  background-color: #144BA3;
+  background-image: url(/assets/desk/desktop/icons/actions/duplicate.png);
+}
+
+
+.banner .x-btn.close-event .x-btn-inner {
+  background-color: #144BA3;
+  background-image: url(/assets/desk/desktop/icons/actions/close-event.png);
+}
+

@@ -5,7 +5,7 @@
 set :output, 'log/schedule.log'
 
 # every :day, :at => '12:00am' do
-#   rake "infodesk:sync:mark"
+#   rake "desk:sync:mark"
 # end
 
 # Example:

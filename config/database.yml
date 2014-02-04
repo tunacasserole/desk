@@ -1,7 +1,7 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: infodesk_development
+  database: desk_development
   pool: 5
   username: root
   password:

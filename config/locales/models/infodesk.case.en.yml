@@ -1,9 +1,9 @@
 en:
   activerecord:
     models:
-      infodesk/case:  'Case'
+      desk/case:  'Case'
     attributes:
-      infodesk/case:
+      desk/case:
         case_id:                           'Case'
         user_id:                           'User'
         agent_id:                          'Agent'

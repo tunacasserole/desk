@@ -4,15 +4,15 @@
 # require 'rake/dsl_definition'
 # require File.expand_path('../config/application', __FILE__)
 
-# Infodesk::Application.load_tasks
+# Desk::Application.load_tasks
 
-# namespace :infodesk do
+# namespace :desk do
 
 #   task :migrations => :environment do |t, args|
 
 #     puts "== starting at " << Time.now.strftime("%H:%M:%S").yellow << " ============ "
 #     @start_time = Time.now
-#     Infodesk::Sync::Script.go
+#     Desk::Sync::Script.go
 #     puts "== finished in #{(Time.now - @start_time).round(0).to_s.cyan}s"
 
 #   end
@@ -22,7 +22,7 @@
 #     puts "== starting at " << Time.now.strftime("%H:%M:%S").yellow << " ============ "
 #     @start_time = Time.now
 #     bts_id = args[:bts_id]
-#     b=Infodesk::Bts.where(:bts_id => bts_id).first
+#     b=Desk::Bts.where(:bts_id => bts_id).first
 #     b.rake_run
 #     puts "== finished in #{(Time.now - @start_time).round(0).to_s.cyan}s"
 
@@ -30,49 +30,49 @@
 
 #   namespace :sync do
 #     namespace :mark do
-#       desc "load Infodesk inventories on hand from Mark inventory qoh."
+#       desc "load Desk inventories on hand from Mark inventory qoh."
 #       task :on_hand => :environment do |t, args|
-#         Infodesk::Sync::Mark.on_hand
+#         Desk::Sync::Mark.on_hand
 #       end
-#       desc "load Infodesk inventories wip from Mark wip."
+#       desc "load Desk inventories wip from Mark wip."
 #       task :wip => :environment do |t, args|
-#         Infodesk::Sync::Mark.wip
+#         Desk::Sync::Mark.wip
 #       end
-#       desc "load Infodesk inventories allocated from Mark transfer line qty."
+#       desc "load Desk inventories allocated from Mark transfer line qty."
 #       task :allocated => :environment do |t, args|
-#         Infodesk::Sync::Mark.allocated
+#         Desk::Sync::Mark.allocated
 #       end
-#       desc "load Infodesk inventories transit from Mark transfer line qty."
+#       desc "load Desk inventories transit from Mark transfer line qty."
 #       task :transit => :environment do |t, args|
-#         Infodesk::Sync::Mark.transit
+#         Desk::Sync::Mark.transit
 #       end
-#       desc "load Infodesk daily results net sale units from Mark order line qty_ordered."
+#       desc "load Desk daily results net sale units from Mark order line qty_ordered."
 #       task :sold => :environment do |t, args|
-#         Infodesk::Sync::Mark.results
+#         Desk::Sync::Mark.results
 #       end
 #     end
 
 #     namespace :rms do
-#       desc "load Infodesk daily results net sale units from rms."
+#       desc "load Desk daily results net sale units from rms."
 #       task :on_hand => :environment do |t, args|
-#         Infodesk::Sync::Rms.on_hand
+#         Desk::Sync::Rms.on_hand
 #       end
-#       desc "load Infodesk inventory, cost, daily, and period results from the RMS System."
+#       desc "load Desk inventory, cost, daily, and period results from the RMS System."
 #       task :on_order => :environment do |t, args|
-#         Infodesk::Sync::Rms.on_order
+#         Desk::Sync::Rms.on_order
 #       end
-#       desc "load Infodesk daily results net sale units from rms transaction_entry quantity."
+#       desc "load Desk daily results net sale units from rms transaction_entry quantity."
 #       task :sold => :environment do |t, args|
-#         Infodesk::Sync::Rms.on_order
+#         Desk::Sync::Rms.on_order
 #       end
 #     end
 
 #     namespace :grits do
-#       desc "load Infodesk inventory, cost, daily, and period results from the RMS System."
+#       desc "load Desk inventory, cost, daily, and period results from the RMS System."
 #       task :rms => :environment do |t, args|
-#         Infodesk::Sync::Rms.results
+#         Desk::Sync::Rms.results
 #       end
 
 #     end
-#   end # namespace infodesk
+#   end # namespace desk
 # end

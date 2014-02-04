@@ -5,4 +5,4 @@ require File.expand_path('../application', __FILE__)
 # to output deprecation warnings to a file
 # ActiveSupport::Deprecation.behavior = Proc.new { |msg, stack| MyLogger.warn(msg) }
 # Initialize the Rails application.
-Infodesk::Application.initialize!
+Desk::Application.initialize!
