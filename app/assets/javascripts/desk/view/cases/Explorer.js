@@ -2,6 +2,7 @@ Ext.define('Desk.view.cases.Explorer', {
 
   extend   : 'Buildit.ux.explorer.Panel',
   alias    : 'widget.desk-cases-Explorer',
+  allowFind : 'true',
 
   // EXPLORER INIT (Start) ===============================================================
   contextMenuConfig : {
@@ -19,8 +20,8 @@ Ext.define('Desk.view.cases.Explorer', {
 
   // LABELS (Start) ======================================================================
   case_idLabel                            : Desk.i18n.model.Case.case_id,
-  user_idLabel                            : Desk.i18n.model.Case.user_id,
-  agent_idLabel                           : Desk.i18n.model.Case.agent_id,
+  case_typeLabel                            : Desk.i18n.model.Case.case_type,
+  case_nbrLabel                           : Desk.i18n.model.Case.case_nbr,
   stateLabel                              : Desk.i18n.model.Case.state,
   summaryLabel                            : Desk.i18n.model.Case.summary,
   tagsLabel                               : Desk.i18n.model.Case.tags,
@@ -29,13 +30,14 @@ Ext.define('Desk.view.cases.Explorer', {
   // LABELS (End)
 
   // TITLES (Start) ======================================================================
-  title    : 'Cases',
-  subtitle : 'Create and maintain Cases',
+  title    : 'Support Requests',
+  subtitle : 'Work with support requests',
   // TITLES (End)
 
   initComponent : function () {
 
     var me = this;
+
 
     // CONFIG (Start) ======================================================================
     Ext.apply(me, {
@@ -47,14 +49,10 @@ Ext.define('Desk.view.cases.Explorer', {
     Ext.apply(me, {
       columns      : [
         {
-          header       : me.user_idLabel,
-          dataIndex    : 'user_id',
-          flex         : 1
-        },
-        {
-          header       : me.agent_idLabel,
-          dataIndex    : 'agent_id',
-          flex         : 1
+          header       : me.case_nbrLabel,
+          dataIndex    : 'case_nbr',
+          flex         : 1,
+          emptyText    : 'auto-generated on save'
         },
         {
           header       : me.stateLabel,
@@ -62,26 +60,34 @@ Ext.define('Desk.view.cases.Explorer', {
           flex         : 1
         },
         {
-          header       : me.summaryLabel,
-          dataIndex    : 'summary',
-          flex         : 1
+          header       : me.case_typeLabel,
+          dataIndex    : 'case_type',
+          flex         : 2,
+          renderer      : Buildit.util.Format.lookupRenderer('CASE_TYPE'),
+          lkp           : 'code_int'
         },
         {
-          header       : me.tagsLabel,
-          dataIndex    : 'tags',
-          flex         : 1
+          header       : me.summaryLabel,
+          dataIndex    : 'summary',
+          flex         : 2
         },
+
+        // {
+        //   header       : me.tagsLabel,
+        //   dataIndex    : 'tags',
+        //   flex         : 1
+        // },
         {
           header       : me.descriptionLabel,
           dataIndex    : 'description',
-          flex         : 1
+          flex         : 3
         },
-        {
-          xtype        : 'checkcolumn',
-          header       : me.is_destroyedLabel,
-          dataIndex    : 'is_destroyed',
-          flex         : 1
-        }
+        // {
+        //   xtype        : 'checkcolumn',
+        //   header       : me.is_destroyedLabel,
+        //   dataIndex    : 'is_destroyed',
+        //   flex         : 1
+        // }
       ]
     });
     // COLUMNS (End)

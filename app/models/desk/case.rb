@@ -15,26 +15,30 @@ class Desk::Case < ActiveRecord::Base
 
   # BEHAVIOR (Start) ====================================================================
   #supports_logical_delete
-  #supports_audit
+  supports_audit
   #supports_revisioning
-  #supports_fulltext
+  supports_fulltext
   #supports_rest
   #supports_direct
   # BEHAVIOR (End)
 
 
   # VALIDATIONS (Start) =================================================================
-  validates :case_id,                        :presence      => true
+  validates :case_id,                        presence: true
+  validates :summary,                        presence: true
+  validates :case_type,                      presence: true
   # VALIDATIONS (End)
 
 
   # DEFAULTS (Start) ====================================================================
   default :case_id,                          :with => :guid
+  default :case_nbr,                        :override  =>  false,        :with  => :sequence,         :named=>"CASE_NBR"
   # DEFAULTS (End)
 
 
   # ASSOCIATIONS (Start) ================================================================
-
+  # has_many     :notes,                           :class_name => 'Buildit::Note',                 :foreign_key => 'notable_id',       :as => :notable
+  # has_many     :attachments,                           :class_name => 'Buildit::Note',                 :foreign_key => 'notable_id',       :as => :notable
   # ASSOCIATIONS (End)
 
 
@@ -59,18 +63,21 @@ class Desk::Case < ActiveRecord::Base
 
 
   # ORDERING (Start) ====================================================================
-
+  order_search_by :case_nbr => :desc
   # ORDERING (End)
-
-
-  # SCOPES (Start) ======================================================================
-
-  # SCOPES (End)
-
 
   # INDEXING (Start) ====================================================================
   searchable do
     string   :case_id
+    string   :case_nbr
+    string   :case_type
+    string   :summary
+    string   :description
+
+    text     :case_nbr_fulltext, :using => :case_nbr
+    text     :case_type_fulltext, :using => :case_type
+    text     :summary_fulltext, :using => :summary
+    text     :description_fulltext, :using => :description
   end
   # INDEXING (End)
 
@@ -87,7 +94,7 @@ class Desk::Case < ActiveRecord::Base
 
   # HELPERS (Start) =====================================================================
   def compute_display_as
-    self.case_id
+    self.summary
   end
   # HELPERS (End)
 

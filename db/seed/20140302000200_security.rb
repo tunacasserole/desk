@@ -21,7 +21,7 @@ Buildit::Application.create(
   application_id:       '6900AE7AC18B19BA20C9DDESKERP',
   application_code:     'DESK',
   hub_xtype:            'desk-app-Hub',
-  application_name:     'Desk',
+  application_name:     'My Desk',
   description:          "The complete help desk solution.",
   is_enabled:           1
   )

@@ -11,16 +11,25 @@ Ext.define('Desk.model.Case', {
       type       : 'string'
     },
     {
+      name       : 'case_nbr',
+      type       : 'string'
+    },
+    {
       name       : 'user_id',
       type       : 'string'
     },
-    {
-      name       : 'agent_id',
-      type       : 'string'
-    },
+    // {
+    //   name       : 'agent_id',
+    //   type       : 'string'
+    // },
     {
       name       : 'state',
-      type       : 'string'
+      type       : 'string',
+      defaultValue: 'new'
+    },
+    {
+      name       : 'case_type',
+      type       : 'string',
     },
     {
       name       : 'summary',
