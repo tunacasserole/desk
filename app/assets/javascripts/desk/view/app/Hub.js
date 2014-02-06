@@ -41,15 +41,15 @@ Ext.define('Desk.view.app.Hub', {
               }
             },
 
-            {
-              title: 'All my requests',
-              colspan: 2,
-              rowspan: 1,
-              // cls: 'supply',
-              target: {
-                xtype: 'desk-cases-Explorer'
-              }
-            },
+            // {
+            //   title: 'All my requests',
+            //   colspan: 2,
+            //   rowspan: 1,
+            //   // cls: 'supply',
+            //   target: {
+            //     xtype: 'desk-cases-Explorer'
+            //   }
+            // },
 
           ]
         }
