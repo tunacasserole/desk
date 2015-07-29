@@ -100,25 +100,6 @@ Ext.direct.Manager.addProvider({
 
 //
 // -----------------------------------------------------------------------
-// SERVICE: Dashlet
-// -----------------------------------------------------------------------
-//
-
-Ext.direct.Manager.addProvider({
-		type        : 'remoting',
-		url         : Buildit.lib.DirectSources.BUILDIT,
-		maxRetries  : 0,
-		actions     : {
-			Dashlet:[
-				{name: 'build', len: 1},{name: 'bulkUpdate', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'create', len: 1},{name: 'destroy', len: 1},{name: 'fireEvent', len: 1},{name: 'read', len: 1},{name: 'update', len: 1}
-			]
-		},
-		namespace   :'Buildit.service'
-	}
-);
-
-//
-// -----------------------------------------------------------------------
 // SERVICE: Event
 // -----------------------------------------------------------------------
 //
@@ -290,6 +271,25 @@ Ext.direct.Manager.addProvider({
 
 //
 // -----------------------------------------------------------------------
+// SERVICE: Approval
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+		type        : 'remoting',
+		url         : Buildit.lib.DirectSources.BUILDIT,
+		maxRetries  : 0,
+		actions     : {
+			Approval:[
+				{name: 'build', len: 1},{name: 'bulkUpdate', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'create', len: 1},{name: 'destroy', len: 1},{name: 'fireEvent', len: 1},{name: 'read', len: 1},{name: 'update', len: 1}
+			]
+		},
+		namespace   :'Desk.service'
+	}
+);
+
+//
+// -----------------------------------------------------------------------
 // SERVICE: Case
 // -----------------------------------------------------------------------
 //
@@ -305,6 +305,101 @@ Ext.direct.Manager.addProvider({
 		},
 		namespace   :'Desk.service'
 	}
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Checklist
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+		type        : 'remoting',
+		url         : Buildit.lib.DirectSources.BUILDIT,
+		maxRetries  : 0,
+		actions     : {
+			Checklist:[
+				{name: 'build', len: 1},{name: 'bulkUpdate', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'create', len: 1},{name: 'destroy', len: 1},{name: 'fireEvent', len: 1},{name: 'read', len: 1},{name: 'update', len: 1}
+			]
+		},
+		namespace   :'Desk.service'
+	}
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Feature
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+		type        : 'remoting',
+		url         : Buildit.lib.DirectSources.BUILDIT,
+		maxRetries  : 0,
+		actions     : {
+			Feature:[
+				{name: 'build', len: 1},{name: 'bulkUpdate', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'create', len: 1},{name: 'destroy', len: 1},{name: 'fireEvent', len: 1},{name: 'read', len: 1},{name: 'update', len: 1}
+			]
+		},
+		namespace   :'Desk.service'
+	}
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Project
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+		type        : 'remoting',
+		url         : Buildit.lib.DirectSources.BUILDIT,
+		maxRetries  : 0,
+		actions     : {
+			Project:[
+				{name: 'build', len: 1},{name: 'bulkUpdate', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'create', len: 1},{name: 'destroy', len: 1},{name: 'fireEvent', len: 1},{name: 'read', len: 1},{name: 'update', len: 1}
+			]
+		},
+		namespace   :'Desk.service'
+	}
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Task
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+		type        : 'remoting',
+		url         : Buildit.lib.DirectSources.BUILDIT,
+		maxRetries  : 0,
+		actions     : {
+			Task:[
+				{name: 'build', len: 1},{name: 'bulkUpdate', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'create', len: 1},{name: 'destroy', len: 1},{name: 'fireEvent', len: 1},{name: 'read', len: 1},{name: 'update', len: 1}
+			]
+		},
+		namespace   :'Desk.service'
+	}
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Search
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'Search':[
+        {name: 'read', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
 );
 
 //
@@ -328,6 +423,25 @@ Ext.direct.Manager.addProvider({
 
 //
 // -----------------------------------------------------------------------
+// SERVICE: comm.email.Message
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'comm.email.Message':[
+        {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
+);
+
+//
+// -----------------------------------------------------------------------
 // SERVICE: comm.email.OutboxItem
 // -----------------------------------------------------------------------
 //
@@ -338,6 +452,120 @@ Ext.direct.Manager.addProvider({
     maxRetries  : 0,
     actions     : {
       'comm.email.OutboxItem':[
+        {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Comment
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'Comment':[
+        {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Post
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'Post':[
+        {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: DashboardState
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'DashboardState':[
+        {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'manage', len: 1},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Dashlet
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'Dashlet':[
+        {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: FollowingEntry
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'FollowingEntry':[
+        {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'removeEntries', len: 2},{name: 'removeAllEntries', len: 0},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
+      ]
+    },
+    namespace   :'Buildit.service'
+  }
+);
+
+//
+// -----------------------------------------------------------------------
+// SERVICE: Post
+// -----------------------------------------------------------------------
+//
+
+Ext.direct.Manager.addProvider({
+    type        : 'remoting',
+    url         : Buildit.lib.DirectSources.BUILDIT,
+    maxRetries  : 0,
+    actions     : {
+      'Post':[
         {name: 'create', len: 1},{name: 'read', len: 1},{name: 'update', len: 1},{name: 'destroy', len: 1},{name: 'bulkUpdate', len: 1},{name: 'build', len: 1},{name: 'callClassMethod', len: 1},{name: 'callInstanceMethod', len: 1},{name: 'fireEvent', len: 1}
       ]
     },

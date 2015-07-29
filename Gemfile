@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 source 'http://tunacasserole:horizon@gems.buildit.io'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '4.0.3'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -24,10 +24,12 @@ end
 
 #gem 'extjs4-rails',   :path => 'vendor/gems/extjs4-rails'
 
-gem 'buildit'#, '0.9.27'#,      :path => 'vendor/gems/buildit'
+
+gem 'buildit'
+
 gem 'buildit_sockets' #, '0.9.27'#,      :path => 'vendor/gems/buildit'
 
-gem 'buildit_comm'
+# gem 'buildit_comm'
 
 gem 'puma'
 
@@ -49,12 +51,29 @@ gem 'progress_bar'
 gem 'roo'
 
 gem 'seed_dump'
+
+gem 'quiet_assets', group: :development
+
+# testing gems
+# gem 'rack-mini-profiler'
+gem 'rspec-rails', group: [:development, :test] # - RSpec is a replacement for Test::MiniTest. I cannot recommend highly enough RSpec. rspec-rails provides Rails integration for RSpec.
+
+group :test do
+  gem 'zeus'
+  gem 'factory_girl_rails' # - an alternative to fabrication. Nice and mature fixture replacement. Spiritual ancestor of fabrication.
+  gem 'guard-rspec' # - fantastic gem that monitors file changes and invokes tasks based on them. Loaded with lots of useful extension. Far superior to autotest and watchr.
+  gem 'rb-fsevent'
+  # gem 'minitest'
+  # gem 'capybara'
+  # gem 'turn'
+  # gem 'parallel_tests'
+  # gem 'zeus-parallel_tests'
+end
+
 # gem 'xlsx'
 # gem 'thin'
+
 # Priceless Gems
-
-# One of the most important programming principles is 'Don't reinvent the wheel!'. If you're faced with a certain task you should always look around a bit for existing solutions, before rolling your own. Here's a list of some 'priceless' gems (all of them Rails 3.1 compliant) that are useful in many Rails projects:
-
 # active_admin - With ActiveAdmin the creation of admin interface for your Rails app is child's play. You get a nice dashboard, CRUD UI and lots more. Very flexible and customizable.
 # better_errors - Better Errors replaces the standard Rails error page with a much better and more useful error page. It is also usable outside of Rails in any Rack app as Rack middleware.
 # bullet - The Bullet gem is designed to help you increase your application’s performance by reducing the number of queries it makes. It will watch your queries while you develop your application and notify you when you should add eager loading (N+1 queries), when you’re using eager loading that isn’t necessary and when you should use counter cache.
@@ -65,17 +84,14 @@ gem 'seed_dump'
 # cucumber-rails - Cucumber is the premium tool to develop feature tests in Ruby. cucumber-rails provides Rails integration for Cucumber.
 # devise - Devise is full-featured authentication solution for Rails applications. In most cases it's preferable to use devise to unrolling your custom authentication solution.
 # fabrication - a great fixture replacement (editor's choice).
-# factory_girl - an alternative to fabrication. Nice and mature fixture replacement. Spiritual ancestor of fabrication.
 # ffaker - handy gem to generate dummy data (names, addresses, etc).
 # feedzirra - Very fast and flexible RSS/Atom feed parser.
 # friendly_id - Allows creation of human-readable URLs by using some descriptive attribute of the model instead of its id.
 # globalize3 - Globalize3 is the successor of Globalize for Rails and is targeted at ActiveRecord version 3.x. It is compatible with and builds on the new I18n API in Ruby on Rails and adds model translations to ActiveRecord.
-# guard - fantastic gem that monitors file changes and invokes tasks based on them. Loaded with lots of useful extension. Far superior to autotest and watchr.
 # haml-rails - haml-rails provides Rails integration for Haml.
 # haml - HAML is a concise templating language, considered by many (including yours truly) to be far superior to Erb.
 # kaminari - Great paginating solution.
 # machinist - Fixtures aren't fun. Machinist is.
-# rspec-rails - RSpec is a replacement for Test::MiniTest. I cannot recommend highly enough RSpec. rspec-rails provides Rails integration for RSpec.
 # sidekiq - Sidekiq is probably the easiest and most scalable way to run background jobs in your Rails app.
 # simple_form - once you've used simple_form (or formtastic) you'll never want to hear about Rails's default forms. It has a great DSL for building forms and no opinion on markup.
 # simplecov-rcov - RCov formatter for SimpleCov. Useful if you're trying to use SimpleCov with the Hudson contininous integration server.

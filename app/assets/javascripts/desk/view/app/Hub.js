@@ -23,54 +23,37 @@ Ext.define('Desk.view.app.Hub', {
       },
       sections: [
 
-        // Section: Cases //
-
+        // Section: Desk //
         {
           title: 'My Desk',
-          columns: 6,
+          columns: 4,
           rows: 4,
           tiles: [
 
             {
-              title: 'Requests on my desk',
+              title: 'Support Requests',
               colspan: 2,
               rowspan: 1,
-              // cls: 'supply',
               target: {
                 xtype: 'desk-cases-Explorer'
               }
-            },
-
-            // {
-            //   title: 'All my requests',
-            //   colspan: 2,
-            //   rowspan: 1,
-            //   // cls: 'supply',
-            //   target: {
-            //     xtype: 'desk-cases-Explorer'
-            //   }
-            // },
-
+            }, {
+              title: 'Projects',
+              colspan: 2,
+              rowspan: 1,
+              target: {
+                xtype: 'desk-projects-Explorer'
+              }
+              // }, {
+              //   title: 'Teams',
+              //   colspan: 2,
+              //   rowspan: 1,
+              //   target: {
+              //     xtype: 'desk-teams-Explorer'
+              //   }
+            }
           ]
         }
-
-        // {
-        //   title: 'Start new',
-        //   columns: 6,
-        //   rows: 4,
-        //   tiles: [
-
-        //     {
-        //       title: 'Start a new request - coming soon',
-        //       colspan: 2,
-        //       rowspan: 1,
-        //       // cls: 'supply',
-        //       target: {
-        //         xtype: 'desk-cases-Form'
-        //       }
-        //     }
-        //   ]
-        // }
 
       ]
     });
