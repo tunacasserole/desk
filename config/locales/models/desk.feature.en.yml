@@ -1,0 +1,17 @@
+en:
+  activerecord:
+    models:
+      desk/feature:  'Feature'
+    attributes:
+      desk/feature:
+        display_as:                        'Feature'
+        feature_id:                        'Feature'
+        project_id:                        'Project'
+        feature_nbr:                       'Feature Nbr'
+        feature_type:                      'Feature Type'
+        state:                             'State'
+        display:                           'Feature Name'
+        description:                       'Description'
+        release_date:                      'Release Date'
+        estimated_hours:                   'Estimated Hours'
+        actual_hours:                      'Actual Hours'
